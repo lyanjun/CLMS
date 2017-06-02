@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">CLMS</string>
+    <string name="app_name">多银行</string>
+    <string name="home">首页</string>
+    <string name="calculator">计算器</string>
+    <string name="camera">相机</string>
+    <string name="mine">我的</string>
 </resources>

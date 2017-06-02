@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MineBottomBarStyle"
+    tools:showIn="@layout/activity_main">
+    <RadioGroup
+        android:id="@+id/bottombar"
+        style="@style/MineBottomBarStyle"
+        tools:showIn="@layout/activity_main">
+        <!-- 首页· -->
+        <RadioButton
+            android:id="@+id/b_home"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/home"
+            style="@style/MineBottomBarButtonStyle" />
+        <!-- 计算器 -->
+        <RadioButton
+            android:id="@+id/b_calculator"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/calculator"
+            style="@style/MineBottomBarButtonStyle" />
+        <!-- 相机 -->
+        <RadioButton
+            android:id="@+id/b_camera"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/camera"
+            style="@style/MineBottomBarButtonStyle" />
+        <!-- 我的 -->
+        <RadioButton
+            android:id="@+id/b_mine"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/mine"
+            style="@style/MineBottomBarButtonStyle" />
+    </RadioGroup>
+</RelativeLayout>
