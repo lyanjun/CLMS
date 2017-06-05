@@ -1,13 +1,8 @@
 package com.sis.clms.activity;
 
 
-import android.hardware.camera2.CaptureFailure;
-import android.os.Build;
-import android.support.annotation.IdRes;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
-import android.view.Window;
-import android.view.WindowManager;
 import android.widget.RadioGroup;
 
 import com.sis.clms.R;
@@ -23,9 +18,10 @@ import java.util.List;
 /**
  * 主页
  */
-public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener{
+public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener {
     private RadioGroup radioGroup;//底部切换按钮
     private List<Fragment> fragments;//Fragment集合
+
     /**
      * 设置界面的布局
      *
@@ -53,22 +49,19 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
     public void setListener() {
         radioGroup.setOnCheckedChangeListener(this);//设置单选的选择监听
     }
+
+
     /**
      * 设置功能
      */
     @Override
     public void setFunction() {
         radioGroup.check(R.id.b_home);//默认展示商城界面
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-//            Window window = getWindow();
-//            // Translucent status bar
-//            window.setFlags(
-//                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,
-//                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-//        }
     }
+
     /**
      * 选择切换界面
+     *
      * @param group
      * @param checkedId
      */
@@ -91,6 +84,7 @@ public class MainActivity extends BaseActivity implements RadioGroup.OnCheckedCh
         }
         transaction.commit();
     }
+
     /**
      * 选择要显示的Fragment
      *

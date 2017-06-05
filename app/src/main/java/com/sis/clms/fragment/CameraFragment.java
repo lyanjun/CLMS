@@ -26,6 +26,13 @@ public class CameraFragment extends TitleFragment{
      */
     @Override
     public void setFunction() {
+        super.setFunction();
+
+    }
+
+    @Override
+    protected void setTitleView() {
+        super.setTitleView();
         titleView.setTitle(getString(R.string.camera));
     }
 }

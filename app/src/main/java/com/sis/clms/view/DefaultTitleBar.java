@@ -27,8 +27,9 @@ import com.sis.clms.R;
 public class DefaultTitleBar extends FrameLayout {
     private ImageButton titleBack;
     private TextView titleName;
-    private LinearLayout titleRight;
+    private LinearLayout titleRight;//右侧
     private RelativeLayout titleGroup;
+    private LinearLayout titleLeft;//左侧
 
     public DefaultTitleBar(Context context) {
         super(context);
@@ -46,13 +47,24 @@ public class DefaultTitleBar extends FrameLayout {
     private void initialize(Context context) {
         View view = View.inflate(context, R.layout.default_title_bar_, this);
         //初始化控件
-        titleBack = (ImageButton) view.findViewById(R.id.title_back);
         titleName = (TextView) view.findViewById(R.id.title_txt);
         titleRight = (LinearLayout) view.findViewById(R.id.title_right);
         titleGroup = (RelativeLayout) view.findViewById(R.id.title_group);
+        titleLeft = (LinearLayout) view.findViewById(R.id.title_left);
+        addBackBtn(context);
         addListenerToView();
     }
 
+    /**
+     * 添加返回键
+     * @param context
+     */
+    private void addBackBtn(Context context){
+        titleBack = new ImageButton(context);
+        titleBack.setBackground(null);
+        titleBack.setImageResource(R.drawable.title_back_btn);
+        addLeftView(titleBack);
+    }
     /**
      * 关闭当前界面
      */
@@ -134,11 +146,27 @@ public class DefaultTitleBar extends FrameLayout {
      * @param view
      */
     public void addRightView(@NonNull View view){
-        if (titleRight.getChildCount() < 3 && !(view instanceof ViewGroup)){
+        addViewEvent(titleRight,view);
+    }
+    /**
+     * 添加右侧按钮
+     * @param view
+     */
+    public void addLeftView(@NonNull View view){
+        addViewEvent(titleLeft,view);
+    }
+
+    /**
+     *
+     * @param parent
+     * @param child
+     */
+    private void addViewEvent(@NonNull LinearLayout parent,@NonNull View child){
+        if (parent.getChildCount() < 3 && !(child instanceof ViewGroup)){
             LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT);
             params.weight = 1;
-            view.setLayoutParams(params);
-            titleRight.addView(view);
+            child.setLayoutParams(params);
+            parent.addView(child);
         }
     }
 }

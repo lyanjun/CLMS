@@ -8,5 +8,5 @@ package com.sis.clms.network;
 
 public class HttpHelper {
     //域名
-    public static final String HTTP_URL = "http://192.168.1.144:8080/Shop/";
+    public static final String HTTP_URL = "http://192.168.0.121:8888/FL/frontlineServlet";
 }

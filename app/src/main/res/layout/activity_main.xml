@@ -4,13 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context="com.sis.clms.activity.MainActivity">
     <!-- 替换布局 -->
     <FrameLayout
         android:id="@+id/body"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_0"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
     <!-- 底部选择栏 -->
     <include layout="@layout/bottombar_layout"/>
 </LinearLayout>

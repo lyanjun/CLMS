@@ -6,14 +6,13 @@
     android:elevation="@dimen/dp_2"
     android:translationZ="@dimen/dp_3"
     xmlns:tools="http://schemas.android.com/tools">
-    <!-- 返回键 -->
-    <ImageButton
-        android:id="@+id/title_back"
+    <!-- 可增加按钮 -->
+    <LinearLayout
+        android:id="@+id/title_left"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:src="@drawable/title_back_btn"
-        android:background="@null"/>
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"/>
     <!-- 标题 -->
     <TextView
         android:id="@+id/title_txt"
@@ -22,7 +21,7 @@
         tools:text="title"
         android:layout_centerInParent="true"
         android:gravity="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="@dimen/sp_20"/>
     <!-- 可增加按钮 -->
     <LinearLayout

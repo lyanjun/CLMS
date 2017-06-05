@@ -4,4 +4,5 @@
     <string name="calculator">计算器</string>
     <string name="camera">相机</string>
     <string name="mine">我的</string>
+    <string name="signed_bank">签约银行</string>
 </resources>

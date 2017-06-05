@@ -3,9 +3,11 @@ package com.sis.clms.activity.base;
 import android.app.Activity;
 import android.app.Service;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
+import android.view.View;
 
 import com.sis.clms.listener.UIListener;
 
@@ -26,6 +28,9 @@ public abstract class BaseActivity extends MPermissionsActivity implements UILis
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         onCreateCustom();//初始化
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            getWindow().getDecorView().setSystemUiVisibility( View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN|View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR);
+        }
     }
 
     /**

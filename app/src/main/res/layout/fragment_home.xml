@@ -6,8 +6,7 @@
     <com.youth.banner.Banner
         android:id="@+id/banner"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@color/cyan">
+        android:layout_height="200dp">
     </com.youth.banner.Banner>
     <!-- 下半部分 -->
     <com.sis.clms.view.ReboundScrollView
@@ -15,15 +14,15 @@
         android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <TextView
-                android:id="@+id/test"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- 功能分类 -->
+            <!-- 更多功能 -->
+            <!-- 列表信息 -->
+            <com.sis.clms.view.ScrollListView
+                android:id="@+id/product_list"
                 android:layout_width="match_parent"
-                android:layout_height="500dp"
-                android:text="首页"
-                android:background="@color/red"
-                android:textSize="50dp"
-                android:gravity="center"/>
+                android:layout_height="match_parent"/>
         </LinearLayout>
     </com.sis.clms.view.ReboundScrollView>
 </LinearLayout>
