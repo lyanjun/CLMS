@@ -3,6 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     style="@style/MineBottomBarStyle"
+    android:elevation="@dimen/dp_3"
+    android:translationZ="@dimen/dp_3"
     tools:showIn="@layout/activity_main">
     <RadioGroup
         android:id="@+id/bottombar"

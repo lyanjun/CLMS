@@ -3,10 +3,11 @@ package com.sis.clms.network.entity.response;
 import java.util.List;
 
 /**
+ * 首页商品请求结果
  * Created by DELL on 2017/6/5.
  */
 
-public class Test {
+public class HomeProductList {
 
 
     /**

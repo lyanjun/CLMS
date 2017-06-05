@@ -5,4 +5,7 @@
     <string name="camera">相机</string>
     <string name="mine">我的</string>
     <string name="signed_bank">签约银行</string>
+    <string name="select_all">查看全部</string>
+    <string name="send_flag">发放方式</string>
+    <string name="new_product">最新产品</string>
 </resources>
