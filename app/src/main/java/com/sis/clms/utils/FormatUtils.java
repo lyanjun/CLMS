@@ -1,5 +1,6 @@
 package com.sis.clms.utils;
 
+import android.support.annotation.NonNull;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.RelativeSizeSpan;
@@ -25,4 +26,12 @@ public class FormatUtils {
         return decimalFormat.format(values);
     }
 
+    /**
+     * 获取中间部分的时间
+     * @param string
+     * @return
+     */
+    public static String getMiddleMessage(String string){
+        return string.substring(1,string.length()-1).trim();
+    }
 }

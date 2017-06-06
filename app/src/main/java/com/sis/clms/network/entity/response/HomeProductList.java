@@ -1,5 +1,7 @@
 package com.sis.clms.network.entity.response;
 
+import com.sis.clms.entity.Bean;
+
 import java.util.List;
 
 /**
@@ -45,7 +47,7 @@ public class HomeProductList {
             this.basprddefView = basprddefView;
         }
 
-        public static class BasprddefViewBean {
+        public static class BasprddefViewBean implements Bean{
             /**
              * prdname : 个人担保
              * aflag : 固定提成

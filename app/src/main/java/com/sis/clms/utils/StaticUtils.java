@@ -6,6 +6,7 @@ package com.sis.clms.utils;
  * 创建日期： 2017/5/9
  */
 
-public class StaticUtils {
-
+public interface StaticUtils {
+    //intent传参的Key
+    String PRODUCT = "PRODUCT";//产品
 }

@@ -25,6 +25,7 @@ public abstract class TitleActivity extends BaseActivity {
      */
     public void initParentView(){
         mParentView = new LinearLayout(this);//创建一个线性布局的对象
+        mParentView.setFitsSystemWindows(true);
         mParentView.setOrientation(LinearLayout.VERTICAL);//设置内容的排列方式
         ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT);//设置布局大小

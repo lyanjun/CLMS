@@ -14,6 +14,7 @@ import com.sis.clms.network.entity.response.HomeProductList;
 import java.util.List;
 
 /**
+ * 数据的展示逻辑待处理
  * Created by DELL on 2017/6/5.
  */
 

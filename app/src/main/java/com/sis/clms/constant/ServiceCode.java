@@ -8,4 +8,5 @@ package com.sis.clms.constant;
 public interface ServiceCode {
     //首页
     String PRODUCT_LIST_CODE = "002090";//产品列表(请求该服务，无需用户登录)
+    String PRODUCT_DETAILS_CODE = "442031";//产品详情(请求该服务，无需用户登录)
 }

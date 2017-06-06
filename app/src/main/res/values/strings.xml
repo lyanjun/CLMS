@@ -8,4 +8,5 @@
     <string name="select_all">查看全部</string>
     <string name="send_flag">发放方式</string>
     <string name="new_product">最新产品</string>
+    <string name="product_details">产品详情</string>
 </resources>

@@ -13,25 +13,25 @@
         <!-- 首页· -->
         <RadioButton
             android:id="@+id/b_home"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawableTop="@drawable/b_home"
             android:text="@string/home"
             style="@style/MineBottomBarButtonStyle" />
         <!-- 计算器 -->
         <RadioButton
             android:id="@+id/b_calculator"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawableTop="@drawable/b_calculator"
             android:text="@string/calculator"
             style="@style/MineBottomBarButtonStyle" />
         <!-- 相机 -->
         <RadioButton
             android:id="@+id/b_camera"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawableTop="@drawable/b_camera"
             android:text="@string/camera"
             style="@style/MineBottomBarButtonStyle" />
         <!-- 我的 -->
         <RadioButton
             android:id="@+id/b_mine"
-            android:drawableTop="@mipmap/ic_launcher"
+            android:drawableTop="@drawable/b_mine"
             android:text="@string/mine"
             style="@style/MineBottomBarButtonStyle" />
     </RadioGroup>
